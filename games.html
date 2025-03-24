@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Games - IndieFunded</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header -->
+  <header class="bg-gray-800 px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">IndieFunded</h1>
+    <a href="index.html" class="text-indigo-400 hover:underline">Home</a>
+  </header>
+
+  <!-- Filter Section -->
+  <section class="px-6 py-10 bg-gray-900">
+    <div class="max-w-6xl mx-auto mb-6">
+      <h2 class="text-3xl font-semibold mb-4">Explore Indie Games</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <select class="bg-gray-800 text-white px-4 py-2 rounded">
+          <option>All Genres</option>
+          <option>RPG</option>
+          <option>Puzzle</option>
+          <option>Platformer</option>
+          <option>Strategy</option>
+        </select>
+        <select class="bg-gray-800 text-white px-4 py-2 rounded">
+          <option>Funding Goal</option>
+          <option>&lt; $10k</option>
+          <option>$10k - $50k</option>
+          <option>&gt; $50k</option>
+        </select>
+        <select class="bg-gray-800 text-white px-4 py-2 rounded">
+          <option>% Funded</option>
+          <option>0-25%</option>
+          <option>25-75%</option>
+          <option>75-100%</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Game Cards -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Game Card 1 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Starfall Tactics</h3>
+        <p class="text-gray-400 mb-2">A real-time space strategy game with custom fleets and galactic conquests.</p>
+        <p class="text-sm text-gray-400">Genre: Strategy</p>
+        <p class="text-sm text-gray-400">Goal: $50,000 | Funded: 65%</p>
+      </div>
+
+      <!-- Game Card 2 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Nyx: Dreamwalker</h3>
+        <p class="text-gray-400 mb-2">Dive into surreal puzzles in a dreamlike world with a shapeshifting heroine.</p>
+        <p class="text-sm text-gray-400">Genre: Puzzle</p>
+        <p class="text-sm text-gray-400">Goal: $20,000 | Funded: 90%</p>
+      </div>
+
+      <!-- Game Card 3 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Blade & Echo</h3>
+        <p class="text-gray-400 mb-2">An RPG inspired by feudal Japan with deep combat mechanics and moral choices.</p>
+        <p class="text-sm text-gray-400">Genre: RPG</p>
+        <p class="text-sm text-gray-400">Goal: $100,000 | Funded: 42%</p>
+      </div>
+
+      <!-- Game Card 4 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Rocket Raccoon Run</h3>
+        <p class="text-gray-400 mb-2">Fast-paced endless runner featuring procedurally generated cities.</p>
+        <p class="text-sm text-gray-400">Genre: Platformer</p>
+        <p class="text-sm text-gray-400">Goal: $8,000 | Funded: 78%</p>
+      </div>
+
+      <!-- Game Card 5 -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow-md">
+        <h3 class="text-xl font-semibold mb-2">ChronoGrow</h3>
+        <p class="text-gray-400 mb-2">A farming sim with time travel. Plant in the past, harvest in the future.</p>
+        <p class="text-sm text-gray-400">Genre: Simulation</p>
+        <p class="text-sm text-gray-400">Goal: $25,000 | Funded: 55%</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center text-gray-500 text-sm">
+    © 2025 IndieFunded. Built with passion for indie devs.
+  </footer>
+
+</body>
+</html>
